@@ -23,4 +23,9 @@ body {
   padding: 20px;
   font-family: 'Overpass', sans-serif;
   font-size: 0.938rem;
+  background-color: var(--very-dark-blue);
+  color: var(--White);
+}
+.container {
+  background-color: var(--dark-blue);
 }
