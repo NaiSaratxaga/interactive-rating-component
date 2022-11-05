@@ -19,25 +19,28 @@
 </head>
 
 <body>
+  <main>
+    <!-- Rating state start -->
 
-  <!-- Rating state start -->
-  <div class="container">
-    <div class="container-start">
-      <img src="./images/icon-star.svg" alt="Icon Start" title="Icon satar">
-    </div>
-    <div class="container-info">
-      <h1 class="title">How did we do?</h1>
-
-      <p class="description">Please let us know how we did with your support request. All feedback is appreciated
-        to help us improve our offering!</p>
-      <ul class="container-numbers">
-        <li class="number">1</li>
-        <li class="number">2</li>
-        <li class="number">3</li>
-        <li class="number">4</li>
-        <li class="number">5</li>
-      </ul>
-
+    <div class="container-rating">
+      <div class="icon-start">
+        <img src="./images/icon-star.svg" alt="Icon Start" title="Icon satar">
+      </div>
+      <div class="container-info">
+        <h1 class="title">How did we do?</h1>
+        <p class="description">Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!</p>
+      </div>
+      <div class="container-rate">
+        <!-- change to radio button -->
+        <ul class="container-numbers">
+          <li class="number">1</li>
+          <li class="number">2</li>
+          <li class="number">3</li>
+          <li class="number">4</li>
+          <li class="number">5</li>
+        </ul>
+      </div>
       <button class="button">Submit</button>
     </div>
 
@@ -46,21 +49,24 @@
 
     <!-- Thank you state start -->
 
-    <div class="container">
-      <div>
-        <img src="./images/illustration-thank-you.svg" alt="Thank you" title="Thank you">
-      </div>
-      <p>You selected out of 5</p>
 
-      <!-- Add rating here -->
-      <h2> Thank you!
-      </h2>
-      <p>We appreciate you taking the time to give a rating. If you ever need more support,don’t hesitate to get in
-        touch!</p>
-
-
-      <!-- Thank you state end -->
+    <div>
+      <img src="./images/illustration-thank-you.svg" alt="Thank you" title="Thank you">
     </div>
+    <p>You selected out of 5</p>
+
+    <!-- Add rating here -->
+    <h2> Thank you!
+    </h2>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support,don’t hesitate to get in
+      touch!</p>
+
+
+    <!-- Thank you state end -->
+
+    </div>
+  </main>
+  <script src="./js/index.js"></script>
 </body>
 
 </html>

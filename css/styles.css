@@ -32,17 +32,17 @@ body {
 }
 
 /* Rating state start */
-.container {
+.container-rating {
   background-color: var(--dark-blue);
   border-radius: 0.875rem;
   padding: 1.563rem;
   border-radius: 0.938rem;
 }
-.container-start {
+.icon-start {
   display: flex;
   align-items: center;
 }
-.container-start img {
+.icon-start img {
   border-radius: 50%;
   background-color: var(--light-grey);
   padding: 0.625rem;
