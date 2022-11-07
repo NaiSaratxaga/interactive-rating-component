@@ -14,6 +14,7 @@ ul {
   --medium-grey: hsl(216, 12%, 54%);
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
+  --dark-blue-bg-icon: hsl(217, 15%, 24%);
   --font-regular: 400;
   --font-bold: 700;
 }
@@ -28,13 +29,16 @@ body {
   font-size: 0.938rem;
   font-weight: var(--font-regular);
   background-color: var(--very-dark-blue);
-  color: var(--White);
+  color: var(--light-grey);
 }
 
 /* Rating state start */
-.container-rating {
+.container-rating .container-thanks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--dark-blue);
-  border-radius: 0.875rem;
+  border-radius: 1rem;
   padding: 1.563rem;
   border-radius: 0.938rem;
 }
@@ -44,31 +48,66 @@ body {
 }
 .icon-start img {
   border-radius: 50%;
-  background-color: var(--light-grey);
-  padding: 0.625rem;
+  background-color: var(--dark-blue-bg-icon);
+  padding: 0.8125rem;
+  width: 3rem;
 }
 .title {
   color: var(--White);
   font-weight: var(--font-bold);
 }
-.description {
+
+.container-ratin p,
+.container-thanks p {
   color: var(--light-grey);
+  font-size: 1rem;
+  line-height: 1.5;
 }
-.container-numbers {
+
+.container-rating ul {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.number {
-  background-color: var(--light-grey);
-  color: var(--White);
-  padding: 14px;
+.container-rating ul li button {
+  height: 3rem;
+  width: 3rem;
+  padding-top: 0.25rem;
   border-radius: 50%;
-}
-.button {
-  background-color: var(--orange);
-  color: var(--White);
   border: none;
-  padding: 14px;
+  outline: none;
+  background-color: var(--very-dark-blue);
+  color: var(--White);
+  cursor: pointer;
+  font-weight: var(--medium-grey);
 }
-/* Rating state end */
+.container-rating ul li button:hover {
+  background: var(--orange);
+  transition: background 0.5s ease, color 0.5s ease;
+}
+.button-submit {
+  background-color: var(--orange);
+  text-transform: uppercase;
+  border-radius: 1.875rem;
+  border: none;
+  color: var(--White);
+  padding: 0.75rem 0 0.625rem;
+  letter-spacing: 0.1rem;
+  font-weight: var(--medium-grey);
+  cursor: pointer;
+}
+.button-submit:hover {
+  background-color: var(--White);
+  color: var(--very-dark-blue);
+  transition: background 0.5s ease, color 0.5s ease;
+}
+.container-thanks {
+}
+.title-thanks {
+  color: var(--White);
+  font-weight: var(--font-bold);
+  gap: 1.25rem;
+  text-align: center;
+  align-items: center;
+  padding: 1.875rem;
+}

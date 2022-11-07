@@ -24,24 +24,19 @@
 
     <div class="container-rating">
       <div class="icon-start">
-        <img src="./images/icon-star.svg" alt="Icon Start" title="Icon satar">
+        <img src="./images/icon-star.svg" alt="Icon Start" title="Icon star">
       </div>
-      <div class="container-info">
-        <h1 class="title">How did we do?</h1>
-        <p class="description">Please let us know how we did with your support request. All feedback is appreciated
-          to help us improve our offering!</p>
-      </div>
-      <div class="container-rate">
-        <!-- change to radio button -->
-        <ul class="container-numbers">
-          <li class="number">1</li>
-          <li class="number">2</li>
-          <li class="number">3</li>
-          <li class="number">4</li>
-          <li class="number">5</li>
-        </ul>
-      </div>
-      <button class="button">Submit</button>
+      <h1 class="title">How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated
+        to help us improve our offering!</p>
+      <ul>
+        <li><button value="1" class="btn">1</button> </li>
+        <li><button value="2" class="btn">2</button> </li>
+        <li><button value="3" class="btn">3</button> </li>
+        <li><button value="4" class="btn">4</button> </li>
+        <li><button value="5" class="btn">5</button></li>
+      </ul>
+      <button class="button-submit" id="submit">Submit</button>
     </div>
 
 
@@ -50,17 +45,17 @@
     <!-- Thank you state start -->
 
 
-    <div>
-      <img src="./images/illustration-thank-you.svg" alt="Thank you" title="Thank you">
+    <div class="container-thanks">
+      <img src="./images/illustration-thank-you.svg" alt="Card with thank you" title="Card thank you">
     </div>
     <p>You selected out of 5</p>
 
     <!-- Add rating here -->
-    <h2> Thank you!
-    </h2>
+    <h2 class="title-thanks"> Thank you!</h2>
     <p>We appreciate you taking the time to give a rating. If you ever need more support,don’t hesitate to get in
       touch!</p>
 
+    <button class="button-submit" id="back">Rate Again</button>
 
     <!-- Thank you state end -->
 
