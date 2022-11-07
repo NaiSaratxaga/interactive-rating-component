@@ -101,8 +101,7 @@ body {
   color: var(--very-dark-blue);
   transition: background 0.5s ease, color 0.5s ease;
 }
-.container-thanks {
-}
+
 .title-thanks {
   color: var(--White);
   font-weight: var(--font-bold);
@@ -111,3 +110,20 @@ body {
   align-items: center;
   padding: 1.875rem;
 }
+.container-thanks-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.number-selected {
+  background-color: var(--dark-blue-bg-icon);
+  border-radius: 1.875rem;
+  width: 12.5rem;
+  color: var(--orange);
+  font-weight: var(--font-bold);
+  text-align: center;
+  align-items: center;
+}
+/* .container-thanks-hidden {
+  display: none;
+} */
